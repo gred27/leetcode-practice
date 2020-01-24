@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52137B823D9A03000861566 /* 1277.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52137B723D9A03000861566 /* 1277.swift */; };
+		B598A53B23DADA90009E26F6 /* definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598A53A23DADA90009E26F6 /* definition.swift */; };
+		B5E295D023D302150075744B /* 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E295CF23D302150075744B /* 3.swift */; };
+		B5E295D223D40EBC0075744B /* 303.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E295D123D40EBC0075744B /* 303.swift */; };
+		B5E295D423D41DAE0075744B /* 34.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E295D323D41DAE0075744B /* 34.swift */; };
 		B5E399B523C72C4C00F49EAC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E399B423C72C4C00F49EAC /* main.swift */; };
+		B5E399BC23C855CA00F49EAC /* 680.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E399BB23C855CA00F49EAC /* 680.swift */; };
+		B5FA93EA23CAC93E00955B76 /* 791.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA93E923CAC93E00955B76 /* 791.swift */; };
+		B5FA93EC23CAD71700955B76 /* 344.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA93EB23CAD71700955B76 /* 344.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B52137B723D9A03000861566 /* 1277.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1277.swift; sourceTree = "<group>"; };
+		B598A53A23DADA90009E26F6 /* definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = definition.swift; sourceTree = "<group>"; };
+		B5E295CF23D302150075744B /* 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.swift; sourceTree = "<group>"; };
+		B5E295D123D40EBC0075744B /* 303.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 303.swift; sourceTree = "<group>"; };
+		B5E295D323D41DAE0075744B /* 34.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 34.swift; sourceTree = "<group>"; };
 		B5E399B123C72C4C00F49EAC /* leetcode-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E399B423C72C4C00F49EAC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B5E399BB23C855CA00F49EAC /* 680.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 680.swift; sourceTree = "<group>"; };
+		B5FA93E923CAC93E00955B76 /* 791.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 791.swift; sourceTree = "<group>"; };
+		B5FA93EB23CAD71700955B76 /* 344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 344.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				B5E399B423C72C4C00F49EAC /* main.swift */,
+				B52137B723D9A03000861566 /* 1277.swift */,
+				B5E295D323D41DAE0075744B /* 34.swift */,
+				B5E295D123D40EBC0075744B /* 303.swift */,
+				B5E295CF23D302150075744B /* 3.swift */,
+				B598A53A23DADA90009E26F6 /* definition.swift */,
+				B5FA93EB23CAD71700955B76 /* 344.swift */,
+				B5FA93E923CAC93E00955B76 /* 791.swift */,
+				B5E399BB23C855CA00F49EAC /* 680.swift */,
 			);
 			path = "leetcode-practice";
 			sourceTree = "<group>";
@@ -120,7 +144,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E399BC23C855CA00F49EAC /* 680.swift in Sources */,
 				B5E399B523C72C4C00F49EAC /* main.swift in Sources */,
+				B5E295D223D40EBC0075744B /* 303.swift in Sources */,
+				B5E295D023D302150075744B /* 3.swift in Sources */,
+				B5E295D423D41DAE0075744B /* 34.swift in Sources */,
+				B598A53B23DADA90009E26F6 /* definition.swift in Sources */,
+				B5FA93EA23CAC93E00955B76 /* 791.swift in Sources */,
+				B52137B823D9A03000861566 /* 1277.swift in Sources */,
+				B5FA93EC23CAD71700955B76 /* 344.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
