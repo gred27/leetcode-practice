@@ -7,7 +7,7 @@
 //
 
 class Solution_34 {
-    func swapPairs(_ head: ListNode_34?) -> ListNode_34? {
+    func swapPairs(_ head: ListNode?) -> ListNode? {
         
         guard let nextNode = head?.next else {
             return head
@@ -21,7 +21,7 @@ class Solution_34 {
 }
 
 
-func myPrint_34(_ head: ListNode_34?) -> Void {
+func myPrint_34(_ head: ListNode?) -> Void {
     if head != nil {
         print(head?.val)
     } else {

@@ -2,49 +2,61 @@
 //  1277.swift
 //  leetcode-practice
 //
-//  Created by 박지홍 on 2020/01/23.
+//  Created by 박지홍 on 2020/01/25.
 //  Copyright © 2020 gred. All rights reserved.
 //
 
-
-
-
-class Solution_206 {
-    func reverseList(_ head: ListNode?) -> ListNode? {
-        return reverseListInternal(nil, head)
+class Solution_1277 {
+    func countSquares(_ matrix: [[Int]]) -> Int {
+        let rowLen: Int = matrix.count
+        let colLen: Int = matrix[0].count
+        var resultMatrix = matrix
+        var result: Int = 0
+        
+        for i in 0..<rowLen {
+            for j in 0..<colLen {
+                if matrix[i][j] != 0 {
+                    resultMatrix[i][j] = checkMaxLen(resultMatrix, i, j)
+                    result += resultMatrix[i][j]
+                }
+            }
+        }
+//
+//        let result = resultMatrix.flatMap{$0}.reduce(0, {(res:Int, val:Int) -> Int in
+//            return res+val
+//        })
+//
+        return result
     }
     
-    func reverseListInternal (_ prev: ListNode?, _ curr: ListNode?) -> ListNode? {
-        if curr == nil { return prev }
+    func checkMaxLen(_ matrix: [[Int]], _ row: Int, _ col: Int) -> Int {
+        var maxLengthRow: Int = 1
+        var maxLengthCol: Int = 1
+        var offset: Int
         
-        let next = curr?.next
-        curr?.next = prev
+        if row>0 && col>0 {
+            offset = matrix[row-1][col-1]
+        } else {
+            return 1
+        }
         
-        return reverseListInternal(curr, next)
+        if offset == 0 {
+            return 1
+        }
+        
+        for i in 1...offset {
+            if matrix[row][col-i] == 0 || matrix[row-i][col] == 0 {
+                break
+            }
+            
+            if matrix[row-i][col] != 0 {
+                maxLengthRow += 1
+            }
+            
+            if matrix[row][col-i] != 0 {
+                maxLengthCol += 1
+            }
+        }
+        return min(maxLengthCol, maxLengthRow)
     }
 }
-
-func myPrint(_ head: ListNode?) -> Void {
-    if head != nil {
-        print(head?.val)
-    } else {
-        return
-    }
-    return myPrint(head?.next)
-}
-
-let node1 = ListNode(1)
-let node2 = ListNode(2)
-let node3 = ListNode(3)
-let node4 = ListNode(4)
-let node5 = ListNode(5)
-
-//node1.next = node2
-//node2.next = node3
-//node3.next = node4
-//node4.next = node5
-
-//var sol = Solution_13()
-//sol.reverseList(node1)
-
-//myPrint(node5)
